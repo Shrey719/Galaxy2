@@ -1,0 +1,33 @@
+<html>
+<head>
+    <link href="/assets/css/store.css" rel="stylesheet">
+    <script src="/assets/js/store.js"></script>
+    <script>
+        if (localStorage.getItem("/apps/") == null) {
+            localStorage.setItem("/apps/", '[]');
+        }
+    </script>
+</head>
+<body>
+    <div class="row">
+        <div class="item">
+            <p>Minecraft by Electrical Development</p>
+            <sub>From catagory "games"</sub>
+            <br><br>
+            <button onclick = installMinecraft()>Install/Update</button>
+            <br><br>
+            <button onclick = uninstallMinecraft()>Uninstall</button>
+
+        </div>
+        <div class="item">
+            <p>Rammerhead by Electrical Development</p>
+            <sub>From catagory "browser"</sub>
+            <br><br>
+            <button onclick="installRammerhead()">Install/Update</button>
+            <br><br>
+            <button onclick="uninstallRammerhead()">Uninstall</button>
+        </div>
+    </div>
+
+</body>
+</html>

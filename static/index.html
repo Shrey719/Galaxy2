@@ -1,0 +1,20 @@
+<html>
+    <link href="/assets/css/styles.css" rel="stylesheet"> 
+    <script src="/assets/js/apps.js"></script>
+    <title>Galaxy</title>
+    <script data-transport="libcurl" src="/chemical.js"></script>
+    <script src="/assets/js/onload.js"></script>
+    <script src="/assets/js/uvonload.js"></script> <!--Me when chemical js dosent fucking work and I have to do evreything myself anyways-->
+    <div class="allDiv">
+    <footer class="footer">
+    </footer>    
+    <header class="header">
+        <a onclick="openApp('/')"><img src="/assets/img/home.png" height="30vh" width="30vw"></img></a>
+        <a onclick="openApp('/settings.html')"><img src="/assets/img/settingsIcon.png" height=30vh width=30vw ></img></a>
+        <a onclick="localStorage.setItem('URL_LOADED', __uv$config.prefix+__uv$config.encodeUrl(`https://search.brave.com`));openApp('/uv.html')" id="openUVLink"><img src="/assets/img/uv.png" height="30vh" width=30vw class="app_img"></img></a>
+    </header>       
+    </div>
+    <button onclick="let url = prompt('URL?'); localStorage.setItem('URL_LOADED', __uv$config.prefix + __uv$config.encodeUrl(url));openApp('/uv.html')">Its ur job to do the CSS but this button basicly makes the thing open the URL u want</button> 
+    <script src="/assets/js/loadStoreApps.js"></script>
+
+</html>
